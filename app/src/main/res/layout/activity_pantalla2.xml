@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ActivityPantalla2">
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:background="#FAF7F7"
+        android:backgroundTint="#FAF7F7"
+        android:foregroundTint="#F4F3F3"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <EditText
+        android:id="@+id/fullNameEditText"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:hint="Nombre Completo"
+        android:textColor="#0E0E0E"
+        android:textColorHighlight="#100E0E"
+        android:textColorHint="#100C0C"
+        android:textColorLink="#090707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <EditText
+        android:id="@+id/rutEditText"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:hint="RUT"
+        android:textColor="#120C0C"
+        android:textColorHighlight="#120A0A"
+        android:textColorHint="#0E0A0A"
+        android:textColorLink="#0E0A0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <EditText
+        android:id="@+id/birthDateEditText"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:hint="Fecha de Nacimiento"
+        android:inputType="date"
+        android:textColor="#150E0E"
+        android:textColorHighlight="#100B0B"
+        android:textColorHint="#0B0909"
+        android:textColorLink="#0C0A0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#0E0808"
+        android:textColorHighlight="#0E0B0B"
+        android:textColorHint="#120C0C"
+        android:textColorLink="#0E0B0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:drawableTint="#05F80F"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        android:textColor="#0E0808"
+        android:textColorHighlight="#100B0B"
+        android:textColorHint="#0C0808"
+        android:textColorLink="#100D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527" />
+
+
+    <Button
+        android:id="@+id/btnSolicitar"
+        android:layout_width="154dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#056A09"
+        android:text="Solicitar"
+        android:textColor="#F3EEED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/editTextText"
+        android:layout_width="208dp"
+        android:layout_height="56dp"
+        android:ems="20"
+        android:inputType="text"
+        android:text="Solicitud Cuenta"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0E0808"
+        android:textColorHighlight="#100A0A"
+        android:textColorHint="#0E0A0A"
+        android:textColorLink="#100C0C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fullNameEditText"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="@+id/fullNameEditText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <Button
+        android:id="@+id/btnCedulaFrontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#056A09"
+        android:drawableEnd="@android:drawable/ic_menu_camera"
+        android:text="Cédula Frontal"
+        android:textColor="#F3EEED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <Button
+        android:id="@+id/btnCedulaTrasera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#056A09"
+        android:drawableEnd="@android:drawable/ic_menu_camera"
+        android:text="Cédula Trasera"
+        android:textColor="#F3EEED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

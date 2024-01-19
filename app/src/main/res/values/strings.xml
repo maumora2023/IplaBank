@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">IplaBank</string>
+    <string name="select_from_solicitudes_where_id_solicitudid">SELECT * FROM solicitudes WHERE id = :solicitudId</string>
+</resources>
